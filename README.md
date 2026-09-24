@@ -20,7 +20,7 @@ tests, and commits remain in each child repository. Start with the root
 
 ## Migrated skills
 
-The following skills were moved from the global Codex skill directory into
+The following skills were moved from the global skills store into
 `.agents/skills/` so they are available from this workspace without depending
 on global installation state:
 
@@ -28,9 +28,16 @@ on global installation state:
 - `remove-workshop-event` — retire Bastion random events with validation gates.
 - `session-skill-maintainer` — review recent Bastion sessions and maintain
   reusable skill procedures.
+- `ow-balance-notes-writer` — format Overwatch-AI-PVE balance notes.
+- `ow-changelog-sync` — check hero changes against player-facing changelog coverage.
+- `ow-contract-guard` — validate Workshop source and protocol invariants.
+- `ow-fandom-hero-data` — collect structured hero data from Overwatch Fandom.
+- `ow-hero-change-pipeline` — run the hero-change review workflow.
+- `ow-module-metrics-sync` — synchronize module metrics in documentation.
+- `ow-workshop-loops` — design and review Workshop loops for safety and cost.
 
-The `ow-*` skills were intentionally not migrated: their descriptions target
-the separate `Overwatch-AI-PVE` repository rather than this Bastion workspace.
+The `ow-*` skills retain their declared Overwatch-AI-PVE scope. Use them only
+when the task's source and contracts match that workflow.
 
 ## Layout
 

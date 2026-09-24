@@ -1,0 +1,4 @@
+interface:
+  display_name: "OW Workshop Loops"
+  short_description: "Design safe loop logic for OW Workshop"
+  default_prompt: "Use $ow-workshop-loops to design or review loop logic with safe waits, loop selection, and server-load safeguards."
