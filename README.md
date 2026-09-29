@@ -18,6 +18,18 @@ tests, and commits remain in each child repository. Start with the root
 - The existing `Bastion/skills/` files remain repository-local and were not
   rewritten as part of this migration.
 
+## Skill activation
+
+A skill's `description` is its activation contract, visible before the body loads. Write it as: what the skill does; use when (task surfaces, changed artifacts, failure signals); also use when (indirect situations and natural user wording); do NOT use for (adjacent tasks or other skills' scope). Procedure lives in the skill; policy lives in `.github/docs/` and is referenced, not copied. If two skills activate on the same ordinary prompt, clarify their boundary rather than relying on ordering. See `.github/docs/documentation.md`.
+
+## Governance skills
+
+Domain-neutral procedures that apply policy from `.github/docs/`:
+
+- `owbastion-reclaim-entropy` — post-hoc simplification and load-bearing investigations.
+- `owbastion-verify-change` — independent falsification of another author's material change.
+- `owbastion-test-design-review` — test necessity, stability, and duplication review.
+
 ## Migrated skills
 
 The following skills were moved from the global skills store into
