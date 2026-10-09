@@ -1,0 +1,4 @@
+interface:
+  display_name: "开发与更新日志写作"
+  short_description: "从现有开发日志和更新日志提炼中文句式，按你的语气写玩家文案"
+  default_prompt: "使用 $owbastion-log-writer，依据本次已确认的改动，以我的语气起草开发日志或更新日志。"

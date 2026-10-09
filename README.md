@@ -30,6 +30,13 @@ Domain-neutral procedures that apply policy from `.github/docs/`:
 - `owbastion-verify-change` — independent falsification of another author's material change.
 - `owbastion-test-design-review` — test necessity, stability, and duplication review.
 
+## Editorial skills
+
+- `owbastion-log-writer` — write or revise Chinese development logs and release
+  notes using the workspace author's sentence patterns and player-facing voice;
+  Portal contracts remain owned by the platform repository. Use this for Portal
+  prose, and `ow-balance-notes-writer` for legacy Overwatch-AI-PVE balance blocks.
+
 ## Migrated skills
 
 The following skills were moved from the global skills store into
