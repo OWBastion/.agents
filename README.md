@@ -35,34 +35,13 @@ Domain-neutral procedures that apply policy from `.github/docs/`:
 - `owbastion-log-writer` — write or revise Chinese development logs and release
   notes using the workspace author's sentence patterns and player-facing voice;
   Portal contracts remain owned by the platform repository. Use this for Portal
-  prose, and `ow-balance-notes-writer` for legacy Overwatch-AI-PVE balance blocks.
+  prose.
 
 ## Asset skills
 
 - `owbastion-title-badge` — generate unified title badge icons for owbastion.com
   (prompt, magenta-background original, watermark/background removal); outputs
   belong to `owbastion-assets`.
-
-## Migrated skills
-
-The following skills were moved from the global skills store into
-`.agents/skills/` so they are available from this workspace without depending
-on global installation state:
-
-- `add-workshop-event` — add or adjust Bastion random events.
-- `remove-workshop-event` — retire Bastion random events with validation gates.
-- `session-skill-maintainer` — review recent Bastion sessions and maintain
-  reusable skill procedures.
-- `ow-balance-notes-writer` — format Overwatch-AI-PVE balance notes.
-- `ow-changelog-sync` — check hero changes against player-facing changelog coverage.
-- `ow-contract-guard` — validate Workshop source and protocol invariants.
-- `ow-fandom-hero-data` — collect structured hero data from Overwatch Fandom.
-- `ow-hero-change-pipeline` — run the hero-change review workflow.
-- `ow-module-metrics-sync` — synchronize module metrics in documentation.
-- `ow-workshop-loops` — design and review Workshop loops for safety and cost.
-
-The `ow-*` skills retain their declared Overwatch-AI-PVE scope. Use them only
-when the task's source and contracts match that workflow.
 
 ## Layout
 
@@ -79,5 +58,5 @@ owbastion/
 ```
 
 When a skill is relevant, use its workspace path (for example,
-`.agents/skills/add-workshop-event/SKILL.md`) and then follow the repository's
+`.agents/skills/owbastion-verify-change/SKILL.md`) and then follow the repository's
 own routing and validation rules.
