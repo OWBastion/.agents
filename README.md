@@ -37,6 +37,12 @@ Domain-neutral procedures that apply policy from `.github/docs/`:
   Portal contracts remain owned by the platform repository. Use this for Portal
   prose, and `ow-balance-notes-writer` for legacy Overwatch-AI-PVE balance blocks.
 
+## Asset skills
+
+- `owbastion-title-badge` — generate unified title badge icons for owbastion.com
+  (prompt, magenta-background original, watermark/background removal); outputs
+  belong to `owbastion-assets`.
+
 ## Migrated skills
 
 The following skills were moved from the global skills store into
