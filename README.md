@@ -30,8 +30,10 @@ Domain-neutral procedures that apply policy from `.github/docs/`:
 - `owbastion-verify-change` — independent falsification of another author's material change.
 - `owbastion-test-design-review` — test necessity, stability, and duplication review.
 
-## Workspace maintenance skills
+## Workflow skills
 
+- `owbastion-issue-loop` — pick ready Issues, deliver each through its own PR
+  and independent review, and pause or stop cleanly.
 - `owbastion-prune-merged-work` — remove merged or closed branches, worktrees,
   and task leftovers across all workspace repositories, judged by GitHub PR
   state.
