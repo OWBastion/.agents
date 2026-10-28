@@ -13,10 +13,10 @@ tests, and commits remain in each child repository. Start with the root
 - `.agents` owns reusable procedures for work spanning the Bastion ecosystem.
 - Each child repository owns its source, contracts, tests, documentation, and
   repository-specific skills.
-- `workshop-agent` remains the public distribution repository for
-  Workshop-domain skills; it is not replaced by this workspace-local set.
-- The existing `Bastion/skills/` files remain repository-local and were not
-  rewritten as part of this migration.
+- `overwatch-ai-skills` remains the public distribution repository for
+  portable Overwatch and Workshop skills; this workspace-local set does not
+  replace it.
+- `Bastion/skills/` remains repository-local.
 
 ## Skill activation
 
@@ -38,6 +38,11 @@ Domain-neutral procedures that apply policy from `.github/docs/`:
   and task leftovers across all workspace repositories, judged by GitHub PR
   state.
 
+## Tool skills
+
+- `wright` — decide when and how to use the `wright` CLI for Workshop and
+  OverPy correctness, rule cost, symbol and rule flow, and compilation.
+
 ## Editorial skills
 
 - `owbastion-log-writer` — write or revise Chinese development logs and release
@@ -56,6 +61,7 @@ Domain-neutral procedures that apply policy from `.github/docs/`:
 ```text
 owbastion/
 ├── AGENTS.md                 # workspace routing and cross-repository rules
+├── .github/                  # organization policy and routing
 ├── .agents/
 │   ├── README.md             # shared skill ownership and usage
 │   └── skills/               # workspace-wide reusable procedures
